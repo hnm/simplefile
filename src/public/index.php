@@ -19,7 +19,7 @@ n2n\core\TypeLoader::register(true,
 
 
 n2n\core\N2N::initialize($pubPath, $varPath, new n2n\core\FileN2nCache());
-n2n\core\N2N::autoInvokeBatchJobs();
+//n2n\core\N2N::autoInvokeBatchJobs();
 n2n\core\N2N::autoInvokeControllers();
 n2n\core\N2N::finalize();
 
