@@ -1,0 +1,128 @@
+{
+    "types": {
+        "simplefile-simple-file": {
+            "nature": "entity",
+            "entity": "simplefile\\bo\\SimpleFile",
+            "dataSourceName": null,
+            "label": "File",
+            "pluralLabel": "Files",
+            "iconType": null,
+            "defaultSort": [],
+            "fields": {
+                "id": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\numeric\\IntegerEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": false,
+                        "displayInAddView": false,
+                        "helpText": null,
+                        "readOnly": true,
+                        "mandatory": false,
+                        "minValue": "0",
+                        "maxValue": null
+                    },
+                    "label": "Id",
+                    "objectProperty": "id",
+                    "entityProperty": "id"
+                },
+                "name": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "helpText": null,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "maxlength": null,
+                        "multiline": false
+                    },
+                    "label": "Name",
+                    "objectProperty": "name",
+                    "entityProperty": "name"
+                },
+                "file": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "helpText": null,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "allowedExtensions": [],
+                        "thumbDimensions": [],
+                        "checkImageResourceMemory": false,
+                        "referencedNamePropertyId": "name",
+                        "multiUploadAvailable": true
+                    },
+                    "label": "File",
+                    "objectProperty": "file",
+                    "entityProperty": "file"
+                },
+                "linkable": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\bool\\OnlineEiProp",
+                    "props": {
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": false,
+                        "helpText": null,
+                        "readOnly": false,
+                        "displayInOverview": false
+                    },
+                    "label": "linkable",
+                    "objectProperty": "linkable",
+                    "entityProperty": "linkable"
+                },
+                "created": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\date\\DateTimeEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "mandatory": true,
+                        "readOnly": true,
+                        "dateStyle": "medium",
+                        "timeStyle": "short"
+                    },
+                    "label": "Created",
+                    "objectProperty": "created",
+                    "entityProperty": "created"
+                }
+            },
+            "commands": {
+                "overview": {
+                    "class": "rocket\\impl\\ei\\component\\command\\common\\OverviewEiCommand",
+                    "props": {
+                        "pageSize": "30"
+                    }
+                },
+                "rocket-add": {
+                    "class": "rocket\\impl\\ei\\component\\command\\common\\AddEiCommand",
+                    "props": []
+                },
+                "detail": {
+                    "class": "rocket\\impl\\ei\\component\\command\\common\\DetailEiCommand",
+                    "props": []
+                },
+                "edit": {
+                    "class": "rocket\\impl\\ei\\component\\command\\common\\EditEiCommand",
+                    "props": []
+                },
+                "delete": {
+                    "class": "rocket\\impl\\ei\\component\\command\\common\\DeleteEiCommand",
+                    "props": []
+                }
+            },
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        }
+    },
+    "eiTypeExtensions": [],
+    "launchPads": {
+        "simplefile-simple-file": []
+    }
+}
