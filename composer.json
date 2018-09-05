@@ -2,7 +2,7 @@
     "name": "hnm/simplefile",
     "type": "n2n-module",
     "description": "Simple media module for n2n rocket",
-    "keywords": ["gallery","n2n-tmpl-module", "n2n-module", "n2n"],
+    "keywords": ["media","n2n-tmpl-module", "n2n-module", "n2n"],
     "homepage": "https://n2n.rocks/",
     "license": "MIT",
     "authors": [
