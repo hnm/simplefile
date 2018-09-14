@@ -1,7 +1,6 @@
 <?php
 namespace simplefile\model;
 
-use n2n\web\http\Request;
 use rocket\impl\ei\component\prop\string\wysiwyg\DynamicUrlBuilder;
 use n2n\web\http\HttpContext;
 
