@@ -13,7 +13,7 @@
                 "groups": []
             },
             "defaultSort": [],
-            "fields": {
+            "props": {
                 "id": {
                     "class": "rocket\\impl\\ei\\component\\prop\\numeric\\IntegerEiProp",
                     "props": {
