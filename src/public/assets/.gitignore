@@ -3,3 +3,7 @@ n2n-impl-web-ui
 n2n-impl-web-dispatch
 n2n
 rocket
+/n2n-impl-web-ui
+/n2n-impl-web-dispatch
+/n2n
+/rocket
