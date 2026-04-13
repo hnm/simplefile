@@ -5,6 +5,9 @@ use n2n\reflection\ObjectAdapter;
 use n2n\io\managed\File;
 use n2n\reflection\annotation\AnnoInit;
 use n2n\persistence\orm\annotation\AnnoManagedFile;
+use n2n\persistence\orm\annotation\AnnoEntityListeners;
+use n2n\web\http\orm\ResponseCacheClearer;
+
 class SimpleFile extends ObjectAdapter {
     private static function _annos(AnnoInit $ai) {
 		$ai->c(new AnnoEntityListeners(ResponseCacheClearer::getClass()));
