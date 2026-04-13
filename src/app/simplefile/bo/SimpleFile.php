@@ -7,6 +7,7 @@ use n2n\reflection\annotation\AnnoInit;
 use n2n\persistence\orm\annotation\AnnoManagedFile;
 class SimpleFile extends ObjectAdapter {
     private static function _annos(AnnoInit $ai) {
+		$ai->c(new AnnoEntityListeners(ResponseCacheClearer::getClass()));
     	$ai->p('file', new AnnoManagedFile());
     }
     
